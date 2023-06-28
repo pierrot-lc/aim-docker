@@ -1,0 +1,15 @@
+---
+version: "3"
+
+services:
+  server:
+    container_name: aim-server
+    image: aim-server
+    ports:
+      - 53800:53800
+
+  ui:
+    container_name: aim-ui
+    image: aim-ui
+    ports:
+      - "43800:43800"
